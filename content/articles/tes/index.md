@@ -2,7 +2,7 @@
 title: tes
 date: 2026-04-27T17:08:00+05:30
 lastmod: 2026-04-27T17:08:00+05:30
-draft: true
+draft: false
 description: ''
 author: Admin
 section: Karnataka
