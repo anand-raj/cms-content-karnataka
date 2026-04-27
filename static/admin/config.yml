@@ -58,6 +58,9 @@ collections:
         default: ["karnataka"]
 
       - label: Categories
+        name: categories
+        widget: list
+        default: ["Tech"]
 
       - label: Tags
         name: tags
