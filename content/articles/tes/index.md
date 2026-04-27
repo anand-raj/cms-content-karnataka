@@ -1,5 +1,5 @@
 ---
-title: tes
+title: test article from Karnataka
 date: 2026-04-27T17:08:00+05:30
 lastmod: 2026-04-27T17:08:00+05:30
 draft: false
