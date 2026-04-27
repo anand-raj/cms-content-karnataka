@@ -1,0 +1,198 @@
+backend:
+  name: github
+  repo: anand-raj/cms-content-karnataka
+  branch: main
+  base_url: https://sveltia-cms-auth.e-anandraj.workers.dev
+
+media_folder: content/articles
+public_folder: /articles
+
+site_url: https://anand-raj.github.io/cms-content-karnataka/
+
+collections:
+  - name: articles
+    label: Articles
+    folder: content/articles
+    create: true
+    path: "{{slug}}/index"
+    media_folder: images
+    public_folder: images
+    fields:
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+
+      - label: Last Modified
+        name: lastmod
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: true
+
+      - label: Description
+        name: description
+        widget: text
+        required: false
+
+      - label: Author
+        name: author
+        widget: string
+        default: Admin
+
+      - label: Section
+        name: section
+        widget: hidden
+        default: Karnataka
+
+      - label: Categories
+        name: categories
+        widget: list
+        default: ["Tech"]
+
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+
+      - label: Hero Image
+        name: image
+        widget: image
+        required: false
+
+      - label: Image Caption
+        name: image_caption
+        widget: string
+        required: false
+
+      - label: Table of Contents
+        name: toc
+        widget: boolean
+        default: true
+
+      - label: Comments
+        name: comments
+        widget: boolean
+        default: true
+
+      - label: Body
+        name: body
+        widget: markdown
+
+  - name: news
+    label: News
+    folder: content/news
+    create: true
+    path: "{{slug}}/index"
+    media_folder: images
+    public_folder: images
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: true
+      - label: Description
+        name: description
+        widget: text
+        required: false
+      - label: Author
+        name: author
+        widget: string
+        default: Admin
+      - label: Section
+        name: section
+        widget: hidden
+        default: Karnataka
+      - label: Categories
+        name: categories
+        widget: list
+        default: ["News"]
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Hero Image
+        name: image
+        widget: image
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+
+  - name: events
+    label: Events
+    folder: content/events
+    create: true
+    path: "{{slug}}/index"
+    media_folder: images
+    public_folder: images
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: true
+      - label: Description
+        name: description
+        widget: text
+        required: false
+      - label: Section
+        name: section
+        widget: hidden
+        default: Karnataka
+      - label: Event Date
+        name: event_date
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+      - label: Event End Date
+        name: event_end_date
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+        required: false
+      - label: Location
+        name: event_location
+        widget: string
+        required: false
+      - label: Event URL
+        name: event_url
+        widget: string
+        required: false
+      - label: Registration URL
+        name: registration_url
+        widget: string
+        required: false
+      - label: Categories
+        name: categories
+        widget: list
+        default: ["Event"]
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Hero Image
+        name: image
+        widget: image
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
