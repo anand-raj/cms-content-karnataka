@@ -53,7 +53,7 @@ collections:
         default: Karnataka
 
       - label: State
-        name: state
+        name: states
         widget: hidden
         default: ["karnataka"]
 
@@ -120,7 +120,7 @@ collections:
         widget: hidden
         default: Karnataka
       - label: State
-        name: state
+        name: states
         widget: hidden
         default: ["karnataka"]
       - label: Categories
@@ -167,7 +167,7 @@ collections:
         widget: hidden
         default: Karnataka
       - label: State
-        name: state
+        name: states
         widget: hidden
         default: ["karnataka"]
       - label: Event Date
