@@ -6,6 +6,8 @@ draft: false
 description: ''
 author: Admin
 section: Karnataka
+states:
+  - karnataka
 categories:
   - Tech
 tags: []
